@@ -1,8 +1,8 @@
 import requests
 
+# In the URL, change mstdn.social to the server on which your Mastodon account is hosted
 url = 'https://mstdn.social/api/v1/accounts/verify_credentials'
 auth = {'Authorization': 'Bearer <YOUR BEARER TOKEN/API AUTH KEY GOES HERE>'}
-#params = {'status': 'Mastodon API request from Pythong!'}
 
 r = requests.get(url, headers=auth)
 
